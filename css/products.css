@@ -1,0 +1,202 @@
+:root {
+    --main-linen: #fef9e9;
+    --main-grey: #3B3C3C;
+    --main-pink: #D9B9B2;
+    --main-orange: #D49555;
+    --main-green: #BCCDBB;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Quache";
+    src: url(/Quache-BoldExp_PERSONAL.ttf);
+    font-family: "Schnebel";
+    src: url(/Schnebel-Sans-Pro.ttf);
+    font-family: "Schnebel-bold";
+    src: url(/Schnebel-Sans-Pro-Bold.ttf);
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: "Schnebel", Helvetica, sans-serif;
+    color: var(--main-grey);
+    background: var(--main-linen);
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 6.25rem;
+    /* border-bottom: 1px solid var(--main-pink); */
+    position: fixed;
+    top: 0;
+    background-color: var(--main-linen);
+    border-top: 1px solid var(--main-grey);
+}
+
+nav {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    list-style: none;
+    /* visibility: hidden; */
+}
+
+.logo {
+    max-height: 4rem;
+    margin: 1rem;
+}
+
+.site-header-right {
+    float: right;
+}
+
+.site-header-right li {
+    display: inline;
+}
+
+.site-header-right li a {
+    text-decoration: none;
+    color: #444444;
+    padding: 1rem;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+.site-header-right li a:hover {
+    cursor: pointer;
+    /* color: #fffaed; */
+    /* background-color: #444444; */
+    border-radius: 10px;
+    text-decoration: underline;
+}
+
+/* Main */
+
+.hr {
+    width: 40%;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+/* Products section */
+
+.products h1 {
+    margin: 3rem;
+    font-size: 3rem;
+}
+
+.products {
+    margin: 6rem auto 0;
+    width: 70%;
+    padding: 2rem;
+}
+
+.products h2 {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    padding: 2rem 0 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.product-img {
+    width: 700px;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+.coming-soon {
+    width: 200px;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+.products hr {
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.products p {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 1rem 3rem;
+    /* display: flex;
+    justify-content: left; */
+
+}
+
+.bold {
+    font-family: "Schnebel-bold";
+}
+
+/* Contact section */
+
+#contact {
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+    font-family: "Schnebel", Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #444444;
+}
+
+#contact h2 {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    color: #444444;
+}
+
+.contact-details {
+    padding: 0 1em;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 4rem;
+    font-family: "Schnebel", Helvetica, sans-serif;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
