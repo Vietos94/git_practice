@@ -5,17 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/reset.css" rel="stylesheet" />
-    <link href="/css/products.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/hamburgers.css" rel="stylesheet" />
     <link rel="shortcut icon" href="/images/png/logo_the_playground-12.png" type="image/x-icon" />
     <title>The Playground</title>
 </head>
 
 <body>
-    <header class="site-header">
-        <nav role="navigation" class="site-navigation">
+    <header id="header" class="site-header">
+        <nav role="navigation" class="site-nav">
             <a href="index.html"><img src="/images/png/logo_the_playground-07.png" class="logo" /></a>
 
-            <ul class="site-header-right">
+            <ul class="nav-list">
                 <li>
                     <a href="/products.html">Our Products</a>
                 </li>
@@ -32,66 +33,55 @@
                     <a href="#contact">Contact Us</a>
                 </li>
             </ul>
-        </nav>
 
+            <div id="dropdown" class="dropdown">
+                <button id="button" class="hamburger hamburger--collapse" type="button" aria-label="Menu"
+                    aria-controls="navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="/products.html">Our Products</a>
+                    <a href="/services.html">Our Services</a>
+                    <a href="/adventures.html">Mom-Life Adventures</a>
+                    <a href="/about.html">About Us</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section class="products">
             <h1>Our Products</h1>
 
-            <img src="/images/Image-Coming-Soon.png" class="coming-soon">
-
-            <h2>Sensory Bottles</h2>
-
-            <p>
-                Our sensory bottles are crafted to engage children at every stage of their development. For infants and
-                toddlers, they are a source of fascination and helping to enhance sensory awareness,
-                calmness, and visual tracking.<br>
-                As children grow, the bottles become tools for interactive play, such as "I Spy" games, color mixing,
-                and
-                sensory science experiments. They are also perfect for pretend play, providing endless possibilities for
-                imaginative exploration.<br>
-                With diverse themes and sensory experiences — float, sound, spy, move, and touch — they keep playtime
-                vibrant
-                and engaging, while supporting growth and exploration.</p>
-
-            <hr>
-
-            <img src="/images/Image-Coming-Soon.png" class="coming-soon">
-
-            <h2>Water Hyacinth Baskets</h2>
-
-            <p>
-                Our Water Hyacinth Baskets are ideal for little hands to carry their treasures or showcase our sensory
-                bottles.
-                Made from flexible material, these baskets are perfect for both playful exploration and practical
-                storage. They bring charm and functionality to your child's space.<br>
-                They are part of our baby shower and new arrival sets, designed to complement our sensory bottles
-                beautifully.</p>
-
-            <p>Basket size: 36x20x16cm</p>
-
-            <hr>
-
             <img src="/images/DSCF3025.JPG" class="product-img">
 
-            <h2>Playdough Kits</h2>
+            <div class="playdough-kits">
+                <h2>Playdough Kits</h2>
 
-            <p>
-                Our playdough kits spark imagination and inspire creativity.
-                Our permanent and seasonal themed kit, complete with curated toys and props, bring each theme to life,
-                making playtime both delightful and enriching. Designed to align with children&#39;s interests, these
-                kits
-                encourage deeper exploration, and self-expression.<br>
-                Our homemade playdough is a sensory delight—non-toxic, safe for little hands, and available in beautiful
-                colors often with glitter and sequins for extra sparkle. Whether scented or unscented, it invites
-                endless creative possibilities.<br>
-                As children explore with our playdough and themed props, they naturally share their thoughts and
-                feelings, fostering meaningful connections and supporting their growth.</p>
+                <h3>UNLOCK CREATIVITY WITH EVERY KIT</h3>
+                <p>
+                    Our playdough kits spark imagination and inspire creativity, bringing themed adventures to life with
+                    carefully curated toys and props.
+                    Designed to align with children&#39;s interests, these kits encourage deeper exploration and
+                    self-expression.<br>
+
+                    Our homemade playdough is a sensory delight—non-toxic, safe for little hands, and available in
+                    beautiful colors, often with glitter and sequins for that extra sparkle. Whether scented or
+                    unscented, it offers endless creative possibilities.<br>
+
+                    We also cater to various needs, ensuring every child can experience the wonders of sensory play.<br>
+
+                    As children explore, they naturally express their thoughts and feelings, fostering meaningful
+                    connections and supporting their growth.
+                </p>
+            </div>
 
             <hr>
 
+            <div class="playdough-balls">
             <img src="/images/Image-Coming-Soon.png" class="coming-soon">
 
             <h2>Playdough Balls</h2>
@@ -102,7 +92,8 @@
                 Perfect for refreshing your playdough kit, adding a splash of fun to your existing props, or gifting as
                 a special treat, these playdough balls are crafted with the same safe, skin-friendly recipe as our
                 playdough kits.</p>
-
+            </div>
+            
             <hr>
 
             <img src="/images/Image-Coming-Soon.png" class="coming-soon">

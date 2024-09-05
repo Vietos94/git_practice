@@ -2,44 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/reset.css" rel="stylesheet" />
-    <link href="/css/about.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="/images/png/logo_the_playground-12.png" type="image/x-icon" />
-    <title>The Playground</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/css/reset.css" rel="stylesheet" />
+  <link href="/css/styles.css" rel="stylesheet" />
+  <link href="/css/hamburgers.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/images/png/logo_the_playground-12.png" type="image/x-icon" />
+  <title>The Playground</title>
 </head>
 
 <body>
-    <header class="site-header">
-        <nav role="navigation" class="site-navigation">
-            <a href="index.html"><img src="/images/png/logo_the_playground-07.png" class="logo" /></a>
+  <header id="header" class="site-header">
+    <nav role="navigation" class="site-nav">
+      <a href="index.html"><img src="/images/png/logo_the_playground-07.png" class="logo" /></a>
 
-            <ul class="site-header-right">
-                <li>
-                    <a href="/products.html">Our Products</a>
-                </li>
-                <li>
-                    <a href="/services.html">Our Services</a>
-                </li>
-                <li>
-                    <a href="/adventures.html">Mom-Life Adventures</a>
-                </li>
-                <li>
-                    <a href="/about.html">About Us</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact Us</a>
-                </li>
-            </ul>
-        </nav>
+      <ul class="nav-list">
+        <li>
+          <a href="/products.html">Our Products</a>
+        </li>
+        <li>
+          <a href="/services.html">Our Services</a>
+        </li>
+        <li>
+          <a href="/adventures.html">Mom-Life Adventures</a>
+        </li>
+        <li>
+          <a href="/about.html">About Us</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Us</a>
+        </li>
+      </ul>
 
-    </header>
+      <div id="dropdown" class="dropdown">
+        <button id="button" class="hamburger hamburger--collapse" type="button" aria-label="Menu"
+          aria-controls="navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/products.html">Our Products</a>
+          <a href="/services.html">Our Services</a>
+          <a href="/adventures.html">Mom-Life Adventures</a>
+          <a href="/about.html">Our Journey</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <main>
-        <section class="about">
+        <section id="about-us" class="about-us">
             <h1>About Us</h1>
 
+            <div class="about-us-img-container">
+            <img src="/images/chloe+3.JPG" class="chloe-boys">
+            </div>
+
+            <article>
             <h2>At The Playground, we embrace the power of sensory play</h2>
 
             <p>
@@ -73,11 +94,13 @@
                 Our mission is to nurture young minds with safe, high-quality play tools, providing screen-free
                 alternatives
                 that encourage exploration, imagination, and growth.</p>
-
+            </article>
         </section>
 
-        <section class="begin">
-            <hr>
+        <hr>
+
+        <section id="beginning" class="beginning">
+            <article>
             <h2>How it all began</h2>
 
             <p>
@@ -121,7 +144,7 @@
                 seamlessly blend fun and education. At The Playground, my goal is to share these enriching experiences
                 with other families by offering tools that nurture growth, creativity, and joy in every child&#39;s
                 playtime.</p>
-
+            </article>
         </section>
         <hr class="hr">
         <section id="contact">

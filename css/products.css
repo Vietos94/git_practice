@@ -6,6 +6,12 @@
     --main-green: #BCCDBB;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -90,9 +96,6 @@ nav li {
 
 /* Main */
 
-.hr {
-    width: 40%;
-}
 
 main {
     width: 100%;

@@ -29,6 +29,10 @@ body {
     background: var(--main-linen);
 }
 
+hr {
+    width: 40%;
+}
+
 /* Header */
 
 #header {
@@ -67,18 +71,11 @@ body {
 
 .nav-list li a {
     text-decoration: none;
-    color: #444444;
-    /* padding: 1rem; */
-    /* border-radius: 10px;
-    transition-property: background-color;
-    transition-duration: .5s; */
+    color: var(--main-grey);
 }
 
 .nav-list li a:hover {
     cursor: pointer;
-    /* color: #fffaed; */
-    /* background-color: #444444; */
-    /* border-radius: 10px; */
     text-decoration: underline;
 }
 
@@ -116,9 +113,15 @@ body {
     .dropdown-content a {
         color: var(--main-grey);
         padding: 12px 16px;
+        font-size: 1.2rem;
         text-decoration: none;
         display: block;
         /* text-shadow: 2px 2px var(--main-pink); */
+    }
+
+    .dropdown-content a:hover {
+        cursor: pointer;
+        text-decoration: underline;
     }
 
     /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -161,6 +164,7 @@ body {
     .dropdown-content a {
         color: var(--main-grey);
         padding: 12px 16px;
+        font-size: 1rem;
         text-decoration: none;
         display: block;
         /* text-shadow: 2px 2px var(--main-pink); */
@@ -185,6 +189,8 @@ main {
     margin: auto;
 }
 
+
+/* Homepage */
 /* Hero section */
 
 .hero {
@@ -222,7 +228,7 @@ main {
     color: var(--main-linen);
     padding: 2rem;
     font-size: 4rem;
-    text-shadow: 2px 2px var(--main-grey);
+    text-shadow: 2px 2px var(--main-green);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -234,8 +240,27 @@ main {
     color: var(--main-grey);
     padding: 2rem;
     font-size: 1.5rem;
+    /* text-shadow: 2px 2px var(--main-green); */
     text-align: center;
     display: none;
+}
+
+#shop-button {
+    width: 15rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: none;
+    color: var(--main-grey);
+    background-color: var(--main-green);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#shop-button:hover {
+    cursor: pointer;
+    color: var(--main-grey);
+    background-color: var(--main-pink);
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
@@ -249,6 +274,13 @@ main {
     .hero .big-screen {
         font-size: 3.5rem;
         padding: 1.5rem;
+    }
+
+    #shop-button {
+        width: 12rem;
+        margin: 2rem auto;
+        padding: .8rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -271,6 +303,13 @@ main {
 
     #dino-kit-pic {
         display: block;
+    }
+
+    #shop-button {
+        width: 10rem;
+        margin: 1rem auto 0;
+        padding: .7rem;
+        font-size: 1rem;
     }
 
 }
@@ -311,7 +350,7 @@ main {
 
 .intro-text h2 {
     font-family: "Schnebel", Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.6;
     padding-left: 1rem;
     display: flex;
@@ -320,7 +359,7 @@ main {
 
 .intro-text p {
     font-family: "Schnebel", Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     padding: 1rem;
     display: flex;
@@ -333,7 +372,7 @@ main {
 }
 
 .read-more {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: .7rem;
     border: none;
     background-color: var(--main-green);
@@ -364,18 +403,23 @@ main {
     }
 
     .intro-text h2 {
-        font-size: 2.5rem;
-        padding-left: 0.5rem;
+        font-size: 2rem;
+        padding-left: .5rem;
     }
 
     .intro-text p {
         font-size: 1.1rem;
-        padding: 0.5rem;
+        padding: .5rem;
+    }
+
+    .button {
+        margin-left: 0;
+        padding: .5rem;
     }
 
     .read-more {
         font-size: 1rem;
-        padding: 0.6rem;
+        padding: .6rem;
     }
 }
 
@@ -412,7 +456,7 @@ main {
     }
 
     .intro-text h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 1.6;
         padding: 1rem;
         display: flex;
@@ -436,16 +480,13 @@ main {
     .read-more {
         font-size: .8rem;
         padding: .5rem;
-        border: none;
-        background-color: var(--main-green);
-        color: var(--main-grey);
     }
 }
 
 /* Photos section */
 
 #photos {
-    margin: 0 auto 3rem;
+    margin: 0 auto 4rem;
     max-width: 1280px;
     display: flex;
     flex-direction: column;
@@ -473,7 +514,7 @@ main {
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
     #photos {
         max-width: 1000px;
-        padding: 0 1.5rem;
+        padding: 1rem 1.5rem 0;
     }
 
     .all-pics {
@@ -523,7 +564,7 @@ main {
 
 #benefits {
     /* width: 100vw; */
-    background-color: var(--main-pink);
+    background-color: var(--main-green);
     height: auto;
 }
 
@@ -533,24 +574,25 @@ main {
     width: 80%;
 }
 
-.sensory-benefits h3 {
+.sensory-benefits h2 {
     font-family: "Schnebel", Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
     text-align: center;
     padding: 2rem;
 }
 
-.sensory-benefits h4 {
+.sensory-benefits h3 {
     font-family: "Schnebel", Helvetica, sans-serif;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-align: left;
     padding: 0 3rem;
 }
 
 .sensory-benefits p {
-    /* max-width: 80%; */
     font-family: "Schnebel", Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
     text-align: left;
     margin: .5rem auto 2rem;
     padding: 0 3rem;
@@ -558,7 +600,8 @@ main {
     flex-wrap: wrap;
 }
 
-.sensory-benefits p:nth-of-type(6), .sensory-benefits p:nth-of-type(7) {
+.sensory-benefits p:nth-of-type(6),
+.sensory-benefits p:nth-of-type(7) {
     margin-bottom: 1rem;
 }
 
@@ -580,23 +623,33 @@ main {
     .sensory-benefits {
         max-width: 100%;
         margin: 0 auto;
-        padding: 2rem 1rem;
+        padding: 0 1rem;
     }
 
-    .sensory-benefits h3 {
+    .sensory-benefits h2 {
         font-size: 1.75rem;
         padding: 2rem;
     }
 
-    .sensory-benefits h4 {
+    .sensory-benefits h3 {
         font-size: 1.25rem;
         padding: 0 5rem;
     }
 
     .sensory-benefits p {
-        font-size: 1rem;
-        margin: 0.5rem 0;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
         padding: 0 5rem;
+    }
+
+    .sensory-benefits p:nth-of-type(6),
+    .sensory-benefits p:nth-of-type(7) {
+        margin-bottom: .5rem;
+    }
+
+    .sensory-benefits p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 2rem;
     }
 }
 
@@ -607,21 +660,32 @@ main {
     }
 
     #benefits .sensory-benefits {
-        /* margin: auto; */
         width: 100%;
         padding: 0;
     }
 
     .sensory-benefits p {
-        font-size: .9rem;
+        font-size: 1rem;
+    }
+
+    .sensory-benefits p:nth-of-type(6),
+    .sensory-benefits p:nth-of-type(7) {
+        margin: 0 auto .5rem;
+    }
+
+    .sensory-benefits p:last-child {
+        margin-bottom: 0;
+        padding-bottom: 1rem;
     }
 }
+
 
 /* Contact section */
 
 #contact {
     width: 70%;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     margin: auto;
     font-family: "Schnebel", Helvetica, sans-serif;
     font-size: 1rem;
@@ -660,13 +724,13 @@ main {
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
     #contact {
         width: 85%;
-        padding:  1rem;
+        padding: 0 1rem;
         font-size: 1.1rem;
     }
 
     #contact h2 {
         font-size: 1.75rem;
-        margin: 1.5rem;
+        margin: 2rem;
     }
 
     .contact-details {
@@ -732,3 +796,145 @@ footer {
         height: 3rem;
     }
 }
+
+
+
+/* Products page */
+
+/* Our Products section */
+
+.products h1 {
+    margin: 3rem;
+    font-size: 3rem;
+}
+
+.products {
+    margin: 6rem auto 0;
+    width: 70%;
+    padding: 2rem;
+}
+
+.products h2 {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    padding: 2rem 0 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.product-img {
+    width: 700px;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+.coming-soon {
+    width: 200px;
+    display: block;
+    margin: 2rem auto 0;
+}
+
+.products hr {
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.products p {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 1rem 3rem;
+    /* display: flex;
+    justify-content: left; */
+
+}
+
+.bold {
+    font-family: "Schnebel-bold";
+}
+
+
+
+/* Our Services page */
+
+
+
+
+/* About Us page */
+
+#about-us {
+    margin: 6rem auto 2rem;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#about-us h1 {
+    margin: 3rem;
+    font-size: 3rem;
+}
+
+.about-us-img-container {
+    margin: 0 auto 2rem;
+}
+
+#about-us .chloe-boys {
+    max-width: 500px;
+}
+
+#about-us h2 {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    padding: 2rem;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#about-us hr {
+    width: 80%;
+}
+
+#about-us p {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: left;
+}
+
+/* Begin section */
+
+#beginning {
+    margin: 2rem auto 2rem;
+    width: 100%;
+    height: auto;
+    background-color: var(--main-orange);
+}
+
+#beginning h2 {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    padding: 2rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#beginning hr {
+    width: 80%;
+}
+
+#beginning p {
+    font-family: "Schnebel", Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: left;
+}
+
+
+/* Mom-Life Adventures page */
