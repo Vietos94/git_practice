@@ -1,9 +1,9 @@
 :root {
   --main-linen: #fef9e9;
   --main-grey: #3b3c3c;
-  --main-pink: #d9b9b2;
-  --main-orange: #d49555;
-  --main-green: #bccdbb;
+  --main-pink: #fcd4cc;
+  --main-orange: #fec995;
+  --main-green: #cee4cd;
 }
 
 *,
@@ -21,6 +21,8 @@ html {
   src: url(/Quache-BoldExp_PERSONAL.ttf);
   font-family: "Schnebel";
   src: url(/Schnebel-Sans-Pro.ttf);
+  font-family: "Schnebel-bold";
+  src: url(/Schnebel-Sans-Pro-Bold.ttf);
 }
 
 body {
@@ -41,6 +43,7 @@ hr {
   background-color: var(--main-linen);
   border-bottom: 1px solid var(--main-pink);
   position: fixed;
+  z-index: 1000;
   top: 0;
 }
 
@@ -63,7 +66,6 @@ hr {
 }
 
 .nav-list li {
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 1.5rem;
   padding: 0 1.5rem;
   list-style: none;
@@ -208,7 +210,6 @@ main {
 }
 
 .hero h1 {
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 5rem;
   color: var(--main-linen);
   text-shadow: 2px 2px var(--main-grey);
@@ -223,7 +224,6 @@ main {
 }
 
 .hero .big-screen {
-  font-family: "Schnebel", Helvetica, sans-serif;
   color: var(--main-linen);
   padding: 2rem;
   font-size: 4rem;
@@ -235,7 +235,6 @@ main {
 }
 
 .hero .mobile {
-  font-family: "Schnebel", Helvetica, sans-serif;
   color: var(--main-grey);
   padding: 2rem;
   font-size: 1.5rem;
@@ -347,7 +346,6 @@ main {
 }
 
 .intro-text h2 {
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 2.5rem;
   line-height: 1.6;
   padding-left: 1rem;
@@ -356,7 +354,6 @@ main {
 }
 
 .intro-text p {
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 1.3rem;
   line-height: 1.6;
   padding: 1rem;
@@ -572,7 +569,6 @@ main {
 }
 
 .sensory-benefits h2 {
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 2.5rem;
   line-height: 1.5;
   text-align: center;
@@ -580,14 +576,12 @@ main {
 }
 
 .sensory-benefits h3 {
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 2rem;
   text-align: left;
   padding: 0 3rem;
 }
 
 .sensory-benefits p {
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 1.2rem;
   line-height: 1.6;
   text-align: left;
@@ -683,13 +677,11 @@ main {
   padding-top: 2rem;
   padding-bottom: 1rem;
   margin: auto;
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 1rem;
   color: var(--main-grey);
 }
 
 #contact h2 {
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 2rem;
   text-align: center;
   margin: 2rem;
@@ -735,6 +727,7 @@ main {
 }
 
 @media only screen and (max-width: 480px) {
+
   /* Contact section */
   #contact {
     width: 100%;
@@ -771,7 +764,6 @@ main {
 footer {
   width: 100%;
   height: 4rem;
-  font-family: "Schnebel", Helvetica, sans-serif;
   font-size: 0.8rem;
   display: flex;
   justify-content: center;
@@ -796,56 +788,137 @@ footer {
 
 /* Our Products section */
 
-.products h1 {
+#products {
+  margin: 6rem auto 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#products h1 {
   margin: 3rem;
+  padding-left: 2rem;
   font-size: 3rem;
 }
 
-.products {
-  margin: 6rem auto 0;
-  width: 70%;
-  padding: 2rem;
-}
-
 .products h2 {
-  font-family: "Schnebel", Helvetica, sans-serif;
-  padding: 2rem 0 1rem;
+  margin: 2rem 0 1rem;
   font-size: 2rem;
   display: flex;
   justify-content: center;
 }
 
+.playdough-kits {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.mermaid-pic-container {
+  position: relative;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+
 .product-img {
-  width: 700px;
-  display: block;
-  margin: 2rem auto 0;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
-.coming-soon {
-  width: 200px;
-  display: block;
-  margin: 2rem auto 0;
+.playdough-kits-txt {
+  width: 50%;
+  height: auto;
+  padding: 0 3rem;
+  background-color: var(--main-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.products hr {
-  width: 80%;
-  margin-top: 1rem;
-}
-
-.products p {
-  font-family: "Schnebel", Helvetica, sans-serif;
+.playdough-kits-txt p {
   font-size: 1.2rem;
   line-height: 1.6;
   padding: 1rem 3rem;
-  /* display: flex;
-    justify-content: left; */
+}
+
+.playdough-balls {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.playdough-balls-txt {
+  width: 50%;
+  height: auto;
+  padding: 0 3rem;
+  background-color: var(--main-pink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playdough-balls-txt p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 1rem 3rem;
+}
+
+.playdough-adds-on {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.playdough-adds-on-txt {
+  width: 50%;
+  padding: 3rem 1rem;
+  background-color: var(--main-orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playdough-adds-on-txt p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 1rem 3rem;
 }
 
 .bold {
   font-family: "Schnebel-bold";
 }
 
+.coming-soon {
+  width: 50%;
+  display: block;
+  margin: 0;
+}
+
 /* Our Services page */
+
+
+
+
+
+
+/* Mom-Life Adventures page */
+
+
+
+
+
+
 
 /* About Us page */
 
@@ -928,5 +1001,3 @@ footer {
   display: flex;
   justify-content: left;
 }
-
-/* Mom-Life Adventures page */
