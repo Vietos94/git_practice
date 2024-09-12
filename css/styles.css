@@ -804,7 +804,7 @@ footer {
 
 #products h1 {
   margin: 3rem;
-  padding-left: 10rem;
+  padding-left: 8rem;
   font-size: 2.5rem;
 }
 
@@ -891,13 +891,12 @@ footer {
     margin: 2rem;
     padding-left: 2rem;
     font-size: 2rem;
-
   }
 
   #products h2 {
     margin: 0;
     padding: 1rem 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: center;
   }
@@ -1025,16 +1024,18 @@ footer {
 
 #about-us h1 {
   margin: 3rem;
-  padding-left: 10rem;
+  padding-left: 8rem;
   font-size: 2.5rem;
 }
 
 .about-us-img-container {
-  margin: 0 auto 2rem;
+  margin: 0 auto 3rem;
 }
 
 #about-us .chloe-boys {
   max-width: 500px;
+  margin: 0;
+  padding: 0;
 }
 
 .origin-article {
@@ -1066,15 +1067,14 @@ footer {
 /* Beginning section */
 
 #beginning {
-  margin: auto;
   width: 100%;
   height: auto;
 }
 
 .beginning-article {
-  width: 80%;
+  width: 100%;
   margin: auto;
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .beginning-article h2 {
@@ -1082,11 +1082,117 @@ footer {
   font-size: 2rem;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .beginning-article p {
+  width: 80%;
   font-size: 1.2rem;
+  margin: auto;
   padding: 1rem 3rem;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  #about-us {
+    margin: 5rem auto 0;
+  }
+
+  #about-us h1 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    margin: 2rem;
+  }
+
+  .about-us-img-container {
+    margin-bottom: 2rem;
+  }
+
+  #about-us .chloe-boys {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .origin-article {
+    padding: 1rem;
+  }
+
+  .origin-article h2 {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+  .origin-article p {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .beginning-article {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .beginning-article h2 {
+    font-size: 1.8rem;
+  }
+
+  .beginning-article p {
+    width: 90%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #about-us {
+    margin: 4rem auto 0;
+  }
+
+  #about-us h1 {
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 2rem auto;
+  }
+
+  .about-us-img-container {
+    background-color: var(--main-green);
+    margin-bottom: 0;
+  }
+
+  #about-us .chloe-boys {
+    max-width: 100%;
+  }
+
+  .origin-article {
+    padding: 1rem;
+  }
+
+  .origin-article h2 {
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
+
+  .origin-article p {
+    font-size: 0.9rem;
+    padding: .5rem;
+    width: 100%;
+  }
+
+  .beginning-article {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .beginning-article h2 {
+    font-size: 1.5rem;
+  }
+
+  .beginning-article p {
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem;
+    margin: 0 auto;
+  }
 }
