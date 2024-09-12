@@ -39,6 +39,10 @@ hr {
   width: 60%;
 }
 
+.bold {
+  font-family: "Schnebel-bold";
+}
+
 /* Header */
 
 #header {
@@ -71,7 +75,7 @@ hr {
 
 .nav-list li {
   font-size: 1.2rem;
-  padding: 1rem;
+  padding: .5rem 1rem;
   list-style: none;
 }
 
@@ -823,7 +827,7 @@ footer {
   flex-direction: row;
 }
 
-.mermaid-pic-container {
+.playdough-kits-img-container {
   position: relative;
   width: 50%;
   height: auto;
@@ -870,11 +874,7 @@ footer {
   padding: 1rem 3rem;
 }
 
-.bold {
-  font-family: "Schnebel-bold";
-}
-
-.coming-soon-container {
+#products figure {
   width: 50%;
 }
 
@@ -915,7 +915,7 @@ footer {
     padding: 1rem;
   }
 
-  .coming-soon-container {
+  #products figure {
     width: 50%;
   }
 
@@ -958,11 +958,12 @@ footer {
     flex-direction: column-reverse;
   }
 
-  .mermaid-pic-container,
+  .playdough-kits-img-container,
   .playdough-kits-txt,
   .playdough-balls-txt,
-  .adds-on-pic-container,
-  .playdough-adds-on-txt {
+  .playdough-balls-img-container,
+  .playdough-adds-on-txt,
+  .playdough-adds-on-img-container {
     width: 100%;
   }
 
@@ -973,7 +974,7 @@ footer {
     padding: .5rem;
   }
 
-  .mermaid-pic-container {
+  .playdough-kits-img-container {
     position: relative;
     height: 300px;
   }
@@ -988,6 +989,10 @@ footer {
     transform: none;
   }
 
+  #products figure {
+    width: 100%;
+  }
+
   .coming-soon {
     width: 100%;
   }
@@ -995,10 +1000,216 @@ footer {
 
 /* Our Services page */
 
+#services {
+  margin: 6rem auto 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 
+#services h1 {
+  margin: 3rem;
+  padding-left: 8rem;
+  font-size: 2.5rem;
+}
 
+#services h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
 
+.party-favors,
+.baby-shower,
+.subscription-service,
+.party-decor {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
 
+.party-favors-img-container {
+  position: relative;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+}
+
+.construction-kits-img {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.party-favors-txt,
+.baby-shower-txt,
+.subscription-service-txt,
+.party-decor-txt {
+  background-color: var(--main-green);
+  width: 50%;
+  height: auto;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.baby-shower-txt {
+  background-color: var(--main-pink);
+}
+
+.subscription-service-txt {
+  background-color: var(--main-orange);
+}
+
+.party-decor-txt {
+  background-color: var(--main-green);
+}
+
+.party-favors-txt p,
+.baby-shower-txt p,
+.subscription-service-txt p,
+.party-decor-txt p {
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+}
+
+.bold {
+  font-family: "Schnebel-bold";
+}
+
+.services figure {
+  width: 50%;
+}
+
+.coming-soon {
+  width: auto;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  #services {
+    margin: 5rem auto 0;
+  }
+
+  #services h1 {
+    margin: 2rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+  }
+
+  #services h2 {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .party-favors-txt,
+  .baby-shower-txt,
+  .subscription-service-txt,
+  .party-decor-txt {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .party-favors-txt p,
+  .baby-shower-txt p,
+  .subscription-service-txt p,
+  .party-decor-txt p {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .services figure {
+    width: 50%;
+  }
+
+  .coming-soon {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #services {
+    margin: 4rem auto 0;
+  }
+
+  #services h1 {
+    margin: 2rem auto;
+    padding: 0;
+    font-size: 1.8rem;
+  }
+
+  #services h2 {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .party-favors,
+  .subscription-service {
+    flex-direction: column;
+  }
+
+  .baby-shower,
+  .party-decor {
+    flex-direction: column-reverse;
+  }
+
+  .party-favors-txt,
+  .baby-shower-txt,
+  .subscription-service-txt,
+  .party-decor-txt {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .party-favors-txt p,
+  .baby-shower-txt p,
+  .subscription-service-txt p,
+  .party-decor-txt p {
+    font-size: 1rem;
+    padding: .5rem;
+  }
+
+  .party-favors-img-container {
+    position: relative;
+    height: 300px;
+  }
+
+  .construction-kits-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .services figure {
+    width: 100%;
+  }
+
+  .coming-soon {
+    width: 100%;
+  }
+}
 
 /* Mom-Life Adventures page */
 
