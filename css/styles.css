@@ -1002,11 +1002,153 @@ footer {
 
 /* Mom-Life Adventures page */
 
+#sensory-benefits {
+  margin: 6rem auto 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 
+#sensory-benefits h1 {
+  margin: 3rem;
+  padding-left: 8rem;
+  font-size: 2.5rem;
+}
 
+.sensory-benefits-txt {
+  margin: auto;
+  padding: 1rem 12rem;
+  width: 100%;
+  background-color: var(--main-green);
+}
 
+.sensory-benefits-txt h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-align: center;
+  padding: 2rem;
+}
 
+.sensory-benefits-txt h3 {
+  font-size: 2rem;
+  text-align: left;
+  padding: 0 3rem;
+}
 
+.sensory-benefits-txt p {
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0.5rem auto 2rem;
+  padding: 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sensory-benefits-txt p:nth-of-type(6),
+.sensory-benefits-txt p:nth-of-type(7) {
+  margin-bottom: 1rem;
+}
+
+.sensory-benefits-txt p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+}
+
+#sensory-benefits span {
+  text-decoration: underline;
+  padding-right: .5rem;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  #sensory-benefits {
+    margin: 5rem auto 0;
+  }
+
+  #sensory-benefits h1 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    margin: 2rem;
+  }
+
+  .sensory-benefits-txt {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .sensory-benefits-txt h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    padding: 2rem;
+  }
+
+  .sensory-benefits-txt h3 {
+    font-size: 1.25rem;
+    padding: 0 2rem;
+  }
+
+  .sensory-benefits-txt p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    padding: 0 2rem;
+  }
+
+  .sensory-benefits-txt p:nth-of-type(6),
+  .sensory-benefits-txt p:nth-of-type(7) {
+    margin-bottom: 0.5rem;
+  }
+
+  .sensory-benefits-txt p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #sensory-benefits {
+    margin: 4rem auto 0;
+  }
+
+  #sensory-benefits h1 {
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 2rem auto;
+  }
+
+  .sensory-benefits-txt {
+    width: 100%;
+    padding: 0;
+  }
+
+  .sensory-benefits-txt h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    padding: 1rem;
+  }
+
+  .sensory-benefits-txt h3 {
+    font-size: 1.1rem;
+    padding: 0 2rem;
+  }
+
+  .sensory-benefits-txt p {
+    font-size: 1rem;
+    padding: 0 2rem;
+  }
+
+  .sensory-benefits-txt p:nth-of-type(6),
+  .sensory-benefits-txt p:nth-of-type(7) {
+    margin: 0 auto 0.5rem;
+  }
+
+  .sensory-benefits-txt p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
+}
 
 /* About Us page */
 
