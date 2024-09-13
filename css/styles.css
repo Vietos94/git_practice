@@ -18,11 +18,11 @@ html {
 
 @font-face {
   font-family: "Quache";
-  src: url(/fonts/Quache-BoldExp_PERSONAL.ttf);
+  src: url(./fonts/Quache-BoldExp_PERSONAL.ttf);
   font-family: "Schnebel";
-  src: url(/fonts/Schnebel-Sans-Pro.ttf);
+  src: url(./fonts/Schnebel-Sans-Pro.ttf);
   font-family: "Schnebel-bold";
-  src: url(/fonts/Schnebel-Sans-Pro-Bold.ttf);
+  src: url(./fonts/Schnebel-Sans-Pro-Bold.ttf);
 }
 
 body {
