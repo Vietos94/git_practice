@@ -18,11 +18,11 @@ html {
 
 @font-face {
   font-family: "Quache";
-  src: url(/fonts/Quache-BoldExp_PERSONAL.ttf);
+  src: url(./fonts/Quache-BoldExp_PERSONAL.ttf);
   font-family: "Schnebel";
-  src: url(/fonts/Schnebel-Sans-Pro.ttf);
+  src: url(./fonts/Schnebel-Sans-Pro.ttf);
   font-family: "Schnebel-bold";
-  src: url(/fonts/Schnebel-Sans-Pro-Bold.ttf);
+  src: url(./fonts/Schnebel-Sans-Pro-Bold.ttf);
 }
 
 body {
@@ -206,7 +206,7 @@ main {
   margin: 6rem auto 0;
   height: 600px;
   width: 100%;
-  background-image: url(/images/DSCF3055.JPG);
+  background-image: url(./images/DSCF3055.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
