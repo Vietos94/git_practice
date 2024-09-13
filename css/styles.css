@@ -580,7 +580,7 @@ main {
 #benefits h2 {
   font-size: 2rem;
   line-height: 1.2;
-  padding: 4rem 0 2rem;
+  padding: 4rem 0 0;
   text-align: center;
 }
 
@@ -590,32 +590,27 @@ main {
   width: 90%;
 }
 
+.sensory-benefits h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem auto 0.2rem;
+}
+
 .sensory-benefits p {
   font-size: 1.2rem;
-  text-align: left;
-  margin: 0 auto 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
+  padding-left: 1.75rem;
   align-items: center;
 }
 
+.sensory-benefits p:nth-of-type(5),
 .sensory-benefits p:nth-of-type(6),
-.sensory-benefits p:nth-of-type(7),
-.sensory-benefits p:nth-of-type(8) {
-  padding-left: 3rem;
+.sensory-benefits p:nth-of-type(7) {
+  padding-left: 5rem;
+  margin-bottom: 0.3rem;
 }
 
-.sensory-benefits p:last-child {
-  padding-bottom: 2rem;
-}
-
-.benefits span {
-  padding: 0 0.5rem;
-}
-
-.benefits i {
-  display: flex;
-  align-items: center;
+.sensory-benefits i {
+  vertical-align: middle;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
@@ -627,29 +622,32 @@ main {
   #benefits h2 {
     font-size: 1.5rem;
     line-height: 1.2;
-    padding: 3rem;
+    padding: 2rem;
   }
 
   .sensory-benefits {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 5rem 2rem;
+  }
+
+  .sensory-benefits h3 {
+    font-size: 1.3rem;
+    text-align: left;
+    margin: 0.8rem auto 0.2rem;
+    padding: 0;
   }
 
   .sensory-benefits p {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    padding: 0 1rem;
+    padding-left: 1.5rem;
   }
 
+  .sensory-benefits p:nth-of-type(5),
   .sensory-benefits p:nth-of-type(6),
   .sensory-benefits p:nth-of-type(7) {
-    margin-bottom: 0.5rem;
-  }
-
-  .sensory-benefits p:last-child {
-    margin-bottom: 0;
-    padding-bottom: 2rem;
+    padding-left: 4rem;
+    margin-bottom: 0.3rem;
   }
 }
 
@@ -667,23 +665,26 @@ main {
 
   .sensory-benefits {
     width: 100%;
+    padding: 0 1rem 1rem;
+  }
+
+  .sensory-benefits h3 {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: 0.6rem auto 0.2rem;
     padding: 0;
   }
 
   .sensory-benefits p {
     font-size: 1rem;
-    margin-bottom: 0.5rem;
-    padding: 0 2rem;
+    padding: 0 1.25rem;
   }
 
+  .sensory-benefits p:nth-of-type(5),
   .sensory-benefits p:nth-of-type(6),
   .sensory-benefits p:nth-of-type(7) {
-    margin: 0 auto 0.5rem;
-  }
-
-  .sensory-benefits p:last-child {
-    margin-bottom: 0;
-    padding-bottom: 1rem;
+    padding-left: 3rem;
+    margin: 0 auto 0.2rem;
   }
 }
 
@@ -700,7 +701,7 @@ main {
 #contact h2 {
   font-size: 2rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .contact-links {
@@ -731,7 +732,7 @@ main {
   }
 
   #contact h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     padding: 2rem 0 0;
   }
 
@@ -749,8 +750,8 @@ main {
   }
 
   #contact h2 {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0 1rem 1rem;
   }
 
   .contact-links {
