@@ -586,7 +586,7 @@ main {
 
 .sensory-benefits {
   margin: auto;
-  padding: 2rem 14rem;
+  padding: 2rem 14rem 3rem;
   width: 90%;
 }
 
@@ -692,7 +692,7 @@ main {
 
 #contact {
   width: 70%;
-  padding: 1rem;
+  padding: 2rem 0 1rem;
   margin: auto;
   font-size: 1rem;
   color: var(--main-grey);
