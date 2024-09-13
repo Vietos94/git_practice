@@ -43,6 +43,10 @@ hr {
   font-family: "Schnebel-bold";
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 /* Header */
 
 #header {
@@ -206,7 +210,7 @@ main {
   margin: 6rem auto 0;
   height: 600px;
   width: 100%;
-  background-image: url(/images/DSCF3055.JPG);
+  background-image: url(./images/DSCF3055.JPG);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -568,48 +572,50 @@ main {
 #benefits {
   background-color: var(--main-green);
   height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#benefits h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 4rem 0 2rem;
+  text-align: center;
 }
 
 .sensory-benefits {
   margin: auto;
-  padding: 2rem 5rem;
-  width: 80%;
-}
-
-.sensory-benefits h2 {
-  font-size: 2rem;
-  line-height: 1.2;
-  text-align: center;
-  padding: 2rem;
-}
-
-.sensory-benefits h3 {
-  font-size: 1.6rem;
-  text-align: left;
-  padding: 0 3rem;
+  padding: 2rem 14rem;
+  width: 90%;
 }
 
 .sensory-benefits p {
   font-size: 1.2rem;
   text-align: left;
-  margin: 0.5rem auto 2rem;
-  padding: 0 3rem;
+  margin: 0 auto 0.5rem;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .sensory-benefits p:nth-of-type(6),
-.sensory-benefits p:nth-of-type(7) {
-  margin-bottom: 1rem;
+.sensory-benefits p:nth-of-type(7),
+.sensory-benefits p:nth-of-type(8) {
+  padding-left: 3rem;
 }
 
 .sensory-benefits p:last-child {
-  margin-bottom: 0;
   padding-bottom: 2rem;
 }
 
-#benefits span {
-  text-decoration: underline;
+.benefits span {
+  padding: 0 0.5rem;
+}
+
+.benefits i {
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
@@ -618,27 +624,23 @@ main {
     max-width: 100%;
   }
 
+  #benefits h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    padding: 3rem;
+  }
+
   .sensory-benefits {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
   }
 
-  .sensory-benefits h2 {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    padding: 2rem;
-  }
-
-  .sensory-benefits h3 {
-    font-size: 1.2rem;
-    padding: 0 2rem;
-  }
-
   .sensory-benefits p {
     font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    padding: 0 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+    flex-wrap: wrap;
   }
 
   .sensory-benefits p:nth-of-type(6),
@@ -658,24 +660,20 @@ main {
     max-width: 100%;
   }
 
-  #benefits .sensory-benefits {
-    width: 100%;
-    padding: 0;
-  }
-
-  .sensory-benefits h2 {
+  #benefits h2 {
     font-size: 1.3rem;
     line-height: 1.3;
     padding: 1rem;
   }
 
-  .sensory-benefits h3 {
-    font-size: 1.1rem;
-    padding: 0 2rem;
+  .sensory-benefits {
+    width: 100%;
+    padding: 0;
   }
 
   .sensory-benefits p {
     font-size: 1rem;
+    margin-bottom: 0.5rem;
     padding: 0 2rem;
   }
 
@@ -1272,7 +1270,6 @@ footer {
 }
 
 #sensory-benefits span {
-  text-decoration: underline;
   padding-right: .5rem;
 }
 
@@ -1446,8 +1443,6 @@ footer {
   font-size: 1.2rem;
   margin: auto;
   padding: 1rem 3rem;
-  display: flex;
-  justify-content: center;
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
