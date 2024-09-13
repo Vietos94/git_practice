@@ -640,7 +640,6 @@ main {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     padding: 0 1rem;
-    flex-wrap: wrap;
   }
 
   .sensory-benefits p:nth-of-type(6),
