@@ -238,7 +238,7 @@ main {
   font-size: 4rem;
   color: var(--main-linen);
   padding: 2rem;
-  text-shadow: 2px 2px var(--main-green);
+  text-shadow: 2px 2px var(--main-grey);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -258,6 +258,7 @@ main {
   margin: 2rem auto;
   padding: 1rem;
   border: none;
+  box-shadow: 0 8px 16px 0 var(--main-grey), 0 6px 20px 0 var(--main-grey);
   color: var(--main-grey);
   background-color: var(--main-green);
   font-size: 1.5rem;
@@ -318,6 +319,7 @@ main {
     margin: 1rem auto 0;
     padding: 0.7rem;
     font-size: 1rem;
+    box-shadow: none;
   }
 }
 
@@ -373,7 +375,7 @@ main {
 
 .button {
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 1rem; 
 }
 
 .read-more {
@@ -482,7 +484,7 @@ main {
   }
 
   .button {
-    margin: 1rem auto 0;
+    margin: auto;
   }
 
   .read-more {
@@ -586,7 +588,7 @@ main {
 
 .sensory-benefits {
   margin: auto;
-  padding: 2rem 14rem 3rem;
+  padding: 2rem 16rem 3rem;
   width: 90%;
 }
 
@@ -594,6 +596,11 @@ main {
   font-size: 1.5rem;
   text-align: left;
   margin: 1rem auto 0.2rem;
+}
+
+.sensory-benefits h3:nth-of-type(5),
+.sensory-benefits h3:nth-of-type(6) {
+  margin: 1.5rem auto 0.2rem;
 }
 
 .sensory-benefits p {
